@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 1500px;
+    background-color: rgb(226, 225, 225);
+}
+
+nav{
+    background-color: white;
+    height: 7vh;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav div{
+    display: flex;
+}
+
+.left-bar {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.left-bar ul li {
+    display: inline;
+    align-items: center; 
+}
+
+.left-bar ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+
+.right-bar {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.right-bar a {
+    text-decoration: none;
+    padding-top: 5px;
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-main{
+    height: 93vh;
+    
+}
+
+.container-content{
+    margin: auto;
+    width: 600px;
+    margin-top: 50px;
+}
+
+.header h1{
+    text-align: center;
+}
+
+form {
+    padding: 20px;
+    height: 100%;
+}
+
+.projectName{
+    margin-bottom: 10px;
+}
+
+.projectName label {
+    float: left;
+    font-family: Syne Mono;
+    padding-bottom: 10px;
+}
+
+.projectName input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .75);
+    
+}
+
+.date {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.date .start-date{
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+   margin-right: 5px;
+}
+
+.date .start-date label {
+    float: left;
+    font-family: Syne Mono;
+}
+
+.date .start-date input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .75);
+}
+
+.date .end-date{
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.date .end-date label{
+    float: left;
+    font-family: Syne Mono;
+}
+
+.date .end-date input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .75);
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+.description label {
+    font-family: Syne Mono;
+    float: left;
+}
+
+.description textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .75);
+}
+
+.technologies {
+    margin-bottom: 20px;
+}
+
+.h3 {
+    font-family: Syne Mono;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.left-right {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.left-side {
+    margin-right: 20px;
+    flex: 50%;
+}
+
+
+.left-side .NodeJs{
+    padding-bottom: 10px;
+    font-family: Syne Mono;
+}
+
+.left-side .ReactJs{
+    font-family: Syne Mono;
+}
+
+.right-side {
+    margin-left: 20px;
+    flex: 50%;
+    justify-content: flex-end;
+}
+
+.right-side .NextJs {
+    padding-bottom: 10px;
+    font-family: Syne Mono;
+}
+
+.right-side .Typescript {
+    font-family: Syne Mono;
+}
+
+.UploadImage {
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.UploadImage label {
+    font-family: Syne Mono;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.UploadImage input {
+    width: 100%;
+    border: 1px solid black;
+    height: 40px;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .75);
+    align-items: center;
+    background-color: white;
+}
+
+::-webkit-file-upload-button {
+    height: 100%;
+    border: 1px solid black;
+    background-color: rgb(190, 190, 190);
+    border: none;
+    font-family: Syne Mono;
+    
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.bottom-page{
+    height: 100%;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.bottom {
+    padding-top: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.card .img {
+
+}
+
+.card .img img {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.card .tittle{
+
+}
+
+.card .duration {
+
+}
+
+.card .card-content{
+   
+}
+
+.card .after-content{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.after-content .ps{
+    margin: auto;
+}
+
+.after-content .andro{
+    margin: auto;
+}
+
+.after-content .java{
+    margin: auto;
+}
+
+.after-content .nodejs{
+    margin: auto;
+}
+
+.card .button {
+    display: flex;
+    width: 100%;
+}
+
+.card .button1 {
+    width: 45%;
+    text-align: center;
+    background-color: black;
+    margin: auto;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.card .button1 a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+.card .button2{
+    border-radius: 10px;
+    height: 30px;
+    width: 45%;
+    text-align: center;
+    background-color: black;
+    margin: auto
+}
+    
+
+
+.card .button2 a{
+    background-color: ;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}

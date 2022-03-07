@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day2.css">
+</head>
+<body style="background-color: #dcdfe4;">
+
+    <nav>
+        <div class="Left-Bar">
+            <div class="image">
+                <a href=""><img src="assets/logo.png" alt=""></a>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="Right-Bar">
+            <a href="">Contect Me</a>
+        </div>
+    </nav>
+
+<div class="Page" style="width: 380px; margin: auto; margin-top: 50px; height: 500px;">
+    <div class="h1" style="text-align: center;">
+        <h1>Contact Me</h1>
+    </div>
+
+    <form action="" style="">
+        <div class="Name" style="margin-bottom: 10px;">
+            <label for="nama" style="float: left; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Name</label>
+            <input type="text" id="nama" style="width: 100%; box-shadow: 1px 1px black; border: 1px; border-radius: 5px; height: 30px;">
+        </div>
+
+        <div class="email" style="margin-bottom: 10px;">
+            <label for="email" style="float: left; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Mail</label>
+            <input type="mail" id="Email" style="width: 100%; box-shadow: 1px 1px black; border: 1px; border-radius: 5px; height: 30px;">
+        </div>
+
+        <div class="Telfon" style="margin-bottom: 10px;">
+            <label for="Tel" style="float: left; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Phone Number</label>
+            <input type="tel" id="Phone" style="width: 100%; box-shadow: 1px 1px black; border: 1px; border-radius: 5px; height: 30px;">
+        </div>
+
+        <div class="Subject" style="margin-bottom: 10px;">
+            <label for="Subject" style="float: left; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Subject</label>
+            <select name="" id="Subject" style="width: 100%; box-shadow: 1px 1px black; border: 1px; border-radius: 5px; height: 30px; text-align: center;">
+                <option value="" disabled selected></option>
+                <option value="">Fullstack</option>
+                <option value="">Front End</option>
+                <option value="">Back End</option>
+            </select>
+        </div>
+
+        <div class="Message">
+            <label for="Message" style="float: left; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Your Message</label>
+            <textarea name="" id="Message" cols="30" rows="10" style="box-shadow: 1px 1px black; width: 100%; resize: none; border-radius: 10px;"></textarea>
+        </div>
+
+        <button onclick="submitForm()" type="button" style="width: 100px; height: 30px; background-color: black; border-radius: 10px; color: white; float: right; border: 1px;">Submit</button>
+    </form>
+</div>
+    
+</body>
+
+<script src="Contact.js"></script>
+</html>
