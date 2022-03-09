@@ -15,23 +15,8 @@ function addProject(){
 
     image = URL.createObjectURL(image)
 
-    let tech = ""
-
-     if(nodeJs == true){
-        tech +='<img src ="image/node2.jpg"/>'
-    }
-
-    if(reactJs == true){
-        tech +='<img src ="image/react-removebg-preview.png">'
-    } 
-
-    if(nextJs == true){
-        tech +='<img src ="image/nextJs-removebg-preview.png">'
-    }
-
-    if(typesScript == true){
-        tech +='<img src ="image/ts-removebg-preview.png">'
-    }
+    
+    
 
     let project = {
         name: name,
@@ -45,7 +30,7 @@ function addProject(){
         image: image
     }
 
-   
+    console.log(nodeJs)
 
 
     projects.push(project)
@@ -123,19 +108,19 @@ function renderProject(){
 
         <div class="after-content">
             <div class="ps">
-                <img src="${projects[i].nodeJs}" alt="" style="width: 50px;">
+                <img src="${addCheckBox(projects[i].nodeJs)}" alt="" style="width: 50px;">
             </div>
 
             <div class="andro">
-                <img src="${projects[i].reactJs}" alt="" style="width: 50px;">
+                <img src="${addCheckBox(projects[i].reactJs)}" alt="" style="width: 50px;">
             </div>
 
             <div class="java">
-                <img src="${projects[i].nextJs}" alt="" style="width: 50px;">
+                <img src="${addCheckBox(projects[i].nextJs)}" alt="" style="width: 50px;">
             </div>
 
             <div class="nodejs">
-                <img src="${projects[i].typesScript}" alt="" style="width: 50px;">
+                <img src="${addCheckBox(projects[i].typesScript)}" alt="" style="width: 50px;">
             </div>
         </div>
 
@@ -229,4 +214,24 @@ setInterval(function(){
     renderProject()
 }, 1000)
 
+function addCheckBox(nodeJs2, reactJs2, nextJs2, typesScript2){
+    let tech = ""
 
+     if(nodeJs2 == true){
+        tech += '<img src ="image/node2.jpg"/>'
+    }
+
+    if(reactJs2 == true){
+        tech += '<img src ="image/react-removebg-preview.png"/>'
+    } 
+
+    if(nextJs2 == true){
+        tech += '<img src ="image/nextJs-removebg-preview.png"/>'
+    }
+
+    if(typesScript2 == true){
+        tech += '<img src ="image/ts-removebg-preview.png"/>'
+    } 
+
+    return tech
+}
