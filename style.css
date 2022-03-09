@@ -320,6 +320,11 @@ button {
     margin: auto;
 }
 
+
+.Time p{
+    float: right;
+}
+
 .card .button {
     display: flex;
     width: 100%;
